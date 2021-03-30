@@ -1,4 +1,6 @@
 # countdown-timer
+This is a Countdown Clock with Vue.js
+Countdown for three days.
 
 ## Project setup
 ```
