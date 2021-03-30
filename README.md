@@ -2,6 +2,9 @@
 This is a Countdown Clock with Vue.js
 Countdown for three days.
 
+### Published at
+https://shelly-ling.github.io/countdown-timer/
+
 ## Project setup
 ```
 npm install
@@ -22,5 +25,5 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
