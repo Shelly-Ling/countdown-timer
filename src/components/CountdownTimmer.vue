@@ -69,7 +69,7 @@ export default {
     updateClock() {
       const t = this.getTimeRemaining(this.endtime);
 
-      this.days = t.days;
+      this.days = ('0' + t.days)
       this.hours = ('0' + t.hours).slice(-2)
       this.minutes = ('0' + t.minutes).slice(-2)
       this.seconds = ('0' + t.seconds).slice(-2)
@@ -125,23 +125,22 @@ h1 {
 #clockdiv > div {
   padding: 10px;
   border-radius: 5px;
-  background: #00bf96;
+  background: #595757;
   display: inline-block;
 }
 #clockdiv div > span {
-  padding: 40px;
   border-radius: 5px;
-  background: #00816a;
+  background-color: #50a685;
   display: inline-block;
   text-align: center;
-  font-size: 60px;
+  font-size: 110px;
   width: auto;
   height: auto;
 }
 .time {
   width: 101%;
   height: 82%;
-  background: #00816a;
+  background-color: #50a685;
   border-radius: 5px;
 }
 .text {

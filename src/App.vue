@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import CountdownTimmer from './components/CountdownTimmer.vue'
+import CountdownTimmer from './components/CountdownTimmer'
 
 export default {
   name: 'App',
