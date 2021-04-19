@@ -24,6 +24,6 @@ git commit -m 'deploy'
 # git push -f https://github.com/<USERNAME>/<REPO>.git master:gh-pages
 # git push -f https://github.com/Shelly-Ling/countdown-timer.git master:gh-pages
 
-git push -f https://github.com/Shelly-Ling/countdown-timer.git master:gh-pages
+git push -f https://github.com/Shelly-Ling/countdown-timer.git main:gh-pages
 
 cd -

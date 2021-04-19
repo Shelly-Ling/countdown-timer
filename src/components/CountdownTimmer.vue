@@ -90,30 +90,59 @@ export default {
 </script>>
 
 <style scoped>
-body {
-  text-align: center;
-  background: #00ecb9;
-  font-family: sans-serif;
-  font-weight: 100;
-}
+/* X-Small devices (portrait phones, less than 576px) */
+
 .timmer {
+  width: 100vw;
+  height: 82vh;
+  min-width: 310px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  white-space: nowrap;
 }
+
 .time-card {
-  width: 150px;
-  height: 200px;
-  margin: 15px;
+  display: inline-block;
+  width: 20%;
+  height: 100px;
+  margin: 3px;
   text-align: center;
+}
+.time {
+  width: 101%;
+  height: 82%;
+  background-color: #50a685;
+  border-radius: 5px;
+}
+#clockdiv div > span {
+  border-radius: 5px;
+  background-color: #50a685;
+  display: inline-block;
+  text-align: center;
+  font-size: 45px;
+  width: auto;
+  height: 98%;
+  line-height: 82px;
+}
+.text {
+  font-size: 10px;
 }
 h1 {
   color: #396;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 35px;
   margin: 40px 0px 20px;
   text-align: center;
+  min-width: 310px;
 }
+#clockdiv > div {
+  padding: 5px;
+  border-radius: 5px;
+  background: #595757;
+  display: inline-block;
+}
+
 #clockdiv {
   font-family: sans-serif;
   color: #fff;
@@ -122,28 +151,75 @@ h1 {
   text-align: center;
   font-size: 30px;
 }
-#clockdiv > div {
-  padding: 10px;
-  border-radius: 5px;
-  background: #595757;
-  display: inline-block;
-}
-#clockdiv div > span {
-  border-radius: 5px;
-  background-color: #50a685;
-  display: inline-block;
-  text-align: center;
-  font-size: 110px;
-  width: auto;
-  height: auto;
-}
-.time {
-  width: 101%;
-  height: 82%;
-  background-color: #50a685;
-  border-radius: 5px;
-}
 .text {
-  font-size: 30px;
+  font-size: 16px;
+}
+
+@media (min-width: 400px) {
+  .time-card {
+    height: 125px;
+  }
+  #clockdiv div > span {
+    height: 98%;
+    font-size: 60px;
+    line-height: 105px;
+  }
+  .text {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 576px) {
+  .time-card {
+    display: inline-block;
+    width: 18%;
+    height: 150px;
+    margin: 3px;
+  }
+  #clockdiv div > span {
+    font-size: 80px;
+    width: auto;
+    height: 98%;
+    line-height: 125px;
+  }
+  .text {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 768px) {
+  .time-card {
+    width: 20%;
+    height: 200px;
+    margin: 15px;
+    max-width: 170px;
+  }
+
+  #clockdiv div > span {
+    font-size: 110px;
+    width: auto;
+    height: 98%;
+    line-height: 170px;
+  }
+  .time {
+    width: 101%;
+    height: 82%;
+    background-color: #50a685;
+    border-radius: 5px;
+    max-width: 170px;
+  }
+  .text {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 55px;
+  }
 }
 </style>
